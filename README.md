@@ -1,4 +1,4 @@
 # email-openrate-python
 
 
-still under development
+UNDER CONSTRUCTION
