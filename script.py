@@ -1,10 +1,20 @@
+'''
+this script demonstrate how to use the api wrapper to get email open rate
+
+'''
+
+# import the class
 from api_wrapper import MailStatus
 
+# create email status object
 ms = MailStatus(url="https://112b4572b8f2.ngrok.io")
 
+# get unique hash 
 i_hash = ms.getHash()
+# combine that hash and make a url 
 img = ms.getImgURL(i_hash=i_hash)
 
+# this 'll print false if hash is not used
 print("status:",ms.hashStatus(i_hash))
 
 
@@ -47,8 +57,8 @@ with smtplib.SMTP(smtp_server, port) as server:
         from_email, to_email, message.as_string()
     )
  
-# open mail
+# open mail using ur email client (Gmail,etc)
 
-# check status
+# check status this should print True
 print("status:",ms.hashStatus(i_hash))
 
