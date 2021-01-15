@@ -14,7 +14,7 @@ first install all the dependencies from requirements.txt
 
 
 ## Usage
-open script.py   
+edit and run script.py with your details   
 
 
 
